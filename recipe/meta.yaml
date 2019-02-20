@@ -1,0 +1,45 @@
+{% set version = "0.8"%}
+
+package:
+  name: amber_phenix
+  version: {{ version }}
+
+source:
+  path: ../../amber_phenix-0.8
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - {{ compiler('c') }}
+    - {{ compiler('fortran') }}
+  host:
+    - python
+    - bison
+    - flex
+    - texinfo
+    #- arpack
+    #- openblas
+  run:
+    - python
+    - bison
+    - flex
+    - texinfo
+    #- arpack
+    #- openblas
+
+#test:
+#  imports:
+#    ?
+
+about:
+  home: http://ambermd.org
+  #license: LGPL or GPL?
+  #license_family: LGPL or GPL?
+  #license_file:
+  summary: Molecular simulation tools for ../../amber_phenix-0.8
+
+extra:
+  recipe-maintainers:
+    - bkpoon
