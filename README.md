@@ -11,3 +11,5 @@ Repository for building amber_phenix as a conda package
    (`conda activate build`)
 5. Build!
    (`cd conda_amber_phenix/recipe; conda build .`)
+
+
