@@ -1,11 +1,11 @@
 {% set version = "0.8"%}
 
 package:
-  name: amber_phenix
+  name: dac_test
   version: {{ version }}
 
 source:
-  path: ../../amber_phenix-0.8
+  path: ../
 
 build:
   number: 0
@@ -15,19 +15,9 @@ requirements:
     - {{ compiler('c') }}
     - {{ compiler('fortran') }}
   host:
-    - python
-    - bison
-    - flex
-    - texinfo
-    #- arpack
-    #- openblas
+    - openblas
   run:
-    - python
-    - bison
-    - flex
-    - texinfo
-    #- arpack
-    #- openblas
+    - openblas
 
 #test:
 #  imports:
