@@ -1,4 +1,4 @@
 #!/bin/bash
 
-$FC  dactest.F90 -lopenblas
+$FC $FFLAGS $LDFLAGS dactest.F90 -lopenblas
 
